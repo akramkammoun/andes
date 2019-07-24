@@ -387,7 +387,6 @@ public class AMQConnectionFactory implements ConnectionFactory, QueueConnectionF
          * are setting it up here to fix the issue https://wso2.org/jira/browse/MB-162. 
          * */
         
-        //This to add
 	    // Requires permission java.util.PropertyPermission "ignore_setclientID", "write";
 	    AccessController.doPrivileged(new PrivilegedAction<Void>() {
 	        public Void run() {
